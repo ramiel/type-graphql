@@ -5,10 +5,16 @@ declare global {
   var TypeGraphQLMetadataStorage: MetadataStorage;
 }
 
+const cachedStorage = new MetadataStorage();
+
 export function getMetadataStorage(): MetadataStorage {
-  if (!global.TypeGraphQLMetadataStorage) {
-    global.TypeGraphQLMetadataStorage = new MetadataStorage();
+  if (typeof global !== "undefined") {
+    if (!global.TypeGraphQLMetadataStorage) {
+      global.TypeGraphQLMetadataStorage = new MetadataStorage();
+    }
+
+    return global.TypeGraphQLMetadataStorage;
   }
 
-  return global.TypeGraphQLMetadataStorage;
+  return cachedStorage;
 }

@@ -1,9 +1,9 @@
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable-next-line MD041 -->
-[![GraphQL Conf 2023](./images/GraphQLConf-2023-Banner.png)](https://graphql.org/conf/)
+[![GraphQL Conf 2023](https://raw.githubusercontent.com/MichalLytek/type-graphql/v1.2.3/images/GraphQLConf-2023-Banner.png)](https://graphql.org/conf/)
 <!-- prettier-ignore-end -->
 
-![logo](./images/logo.png)
+![logo](https://raw.githubusercontent.com/MichalLytek/type-graphql/v1.2.3/images/logo.png)
 
 # TypeGraphQL
 
@@ -141,9 +141,9 @@ If you prefer video tutorials, you can watch [Ben Awad](https://github.com/benaw
 
 ### Examples
 
-You can also check the [examples folder](./examples) in this repository for more examples of usage: simple fields resolvers, DI Container support, TypeORM integration, automatic validation, etc.
+You can also check the [examples folder](https://github.com/MichalLytek/type-graphql/tree/v1.2.3/examples) in this repository for more examples of usage: simple fields resolvers, DI Container support, TypeORM integration, automatic validation, etc.
 
-The [Tests folder](./tests) might also give you some tips on how to get various things done.
+The [Tests folder](https://github.com/MichalLytek/type-graphql/tree/v1.2.3/tests) might also give you some tips on how to get various things done.
 
 ## Security contact information
 
@@ -179,9 +179,9 @@ It doesn't have a large company that sits behind it - its ongoing development is
 
 <!-- markdownlint-disable MD033 -->
 
-| [<img src="./images/live-graphics-system.png" width="55" alt="live graphic systems" />](https://www.ligrsystems.com) | [<img src="./images/lifex.png" width="60" alt="lifeX aps" />](https://www.joinlifex.com) | [<img src="./images/instinctools.svg" width="100" alt="instinctools" />](https://instinctools.com/manufacturing) | [<img src="./images/vps-server.png" width="125" alt="vps server" />](https://www.vpsserver.com) |
-| :------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
-|                               [**Live Graphic Systems**](https://www.ligrsystems.com)                                |                       [**LifeX Aps**](https://www.joinlifex.com/)                        |                            [**instinctools**](https://instinctools.com/manufacturing)                            |                           [**VPS Server**](https://www.vpsserver.com)                           |
+| [<img src="https://raw.githubusercontent.com/MichalLytek/type-graphql/v1.2.3/images/live-graphics-system.png" width="55" alt="live graphic systems" />](https://www.ligrsystems.com) | [<img src="https://raw.githubusercontent.com/MichalLytek/type-graphql/v1.2.3/images/lifex.png" width="60" alt="lifeX aps" />](https://www.joinlifex.com) | [<img src="https://raw.githubusercontent.com/MichalLytek/type-graphql/v1.2.3/images/instinctools.svg" width="100" alt="instinctools" />](https://instinctools.com/manufacturing) | [<img src="https://raw.githubusercontent.com/MichalLytek/type-graphql/v1.2.3/images/vps-server.png" width="125" alt="vps server" />](https://www.vpsserver.com) |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                               [**Live Graphic Systems**](https://www.ligrsystems.com)                                                                |                                                       [**LifeX Aps**](https://www.joinlifex.com/)                                                        |                                                            [**instinctools**](https://instinctools.com/manufacturing)                                                            |                                                           [**VPS Server**](https://www.vpsserver.com)                                                           |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -193,9 +193,9 @@ It doesn't have a large company that sits behind it - its ongoing development is
 
 ### GitHub Sponsors
 
-[![GitHub Sponsors](./images/github-sponsors.svg)](https://github.com/sponsors/TypeGraphQL)
+[![GitHub Sponsors](https://raw.githubusercontent.com/MichalLytek/type-graphql/v1.2.3/images/github-sponsors.svg)](https://github.com/sponsors/TypeGraphQL)
 
 ## Want to help?
 
 Want to file a bug, contribute some code, or improve the documentation? Great! Please read our
-guidelines for [CONTRIBUTING](./CONTRIBUTING.md) and then check out one of our [help-wanted issues](https://github.com/MichalLytek/type-graphql/labels/Help%20Wanted%20%3Asos%3A).
+guidelines for [CONTRIBUTING](https://github.com/MichalLytek/type-graphql/tree/v1.2.3/CONTRIBUTING.md) and then check out one of our [help-wanted issues](https://github.com/MichalLytek/type-graphql/labels/Help%20Wanted%20%3Asos%3A).

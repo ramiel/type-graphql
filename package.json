@@ -1,6 +1,6 @@
 {
-  "name": "type-graphql",
-  "version": "2.0.0-beta.3",
+  "name": "type-graphql-edge",
+  "version": "2.0.0-beta.5",
   "private": false,
   "description": "Create GraphQL schema and resolvers with TypeScript, using classes and decorators!",
   "keywords": [
@@ -15,22 +15,12 @@
   ],
   "homepage": "https://typegraphql.com",
   "bugs": {
-    "url": "https://github.com/MichalLytek/type-graphql/issues"
+    "url": "https://github.com/ramiel/type-graphql/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MichalLytek/type-graphql.git"
+    "url": "git+https://github.com/ramiel/type-graphql.git"
   },
-  "funding": [
-    {
-      "type": "github",
-      "url": "https://github.com/sponsors/TypeGraphQL"
-    },
-    {
-      "type": "opencollective",
-      "url": "https://opencollective.com/typegraphql"
-    }
-  ],
   "license": "MIT",
   "author": "Michał Lytek (https://github.com/MichalLytek)",
   "exports": {
@@ -43,6 +33,11 @@
       "require": "./build/cjs/shim.js",
       "import": "./build/esm/shim.js",
       "types": "./build/typings/shim.ts"
+    },
+    "./utils": {
+      "require": "./build/cjs/utils.js",
+      "import": "./build/esm/utils.js",
+      "types": "./build/typings/utils.d.ts"
     }
   },
   "main": "./build/cjs/index.js",
@@ -90,7 +85,7 @@
     "fix:lint": "npx eslint --fix .",
     "fix:markdown": "npx markdownlint --fix \"**/*.md\"",
     "gen:docs": "npx ts-node ./scripts/markdown.ts --on docs",
-    "gen:readme": "npx ts-node ./scripts/markdown.ts --on readme",
+    "gen:readme": "npx ts-node ./scripts/markdown.ts --ref v1.2.3 --on readme",
     "gen:sponsorkit": "npx sponsorkit --width=320 --dir=./images --name=github-sponsors",
     "postgen:sponsorkit": "npx shx cp ./images/github-sponsors.svg ./website/static/img/github-sponsors.svg",
     "prepare": "npx ts-patch install -s && npx husky install"
@@ -196,6 +191,6 @@
   },
   "publishConfig": {
     "access": "public",
-    "provenance": true
+    "provenance": false
   }
 }

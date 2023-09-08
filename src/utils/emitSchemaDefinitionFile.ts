@@ -1,5 +1,4 @@
 import { type GraphQLSchema, lexicographicSortSchema, printSchema } from "graphql";
-import { outputFile, outputFileSync } from "@/helpers/filesystem";
 
 export interface PrintSchemaOptions {
   sortedSchema: boolean;
@@ -22,20 +21,27 @@ function getSchemaFileContent(schema: GraphQLSchema, options: PrintSchemaOptions
   return generatedSchemaWarning + printSchema(schemaToEmit);
 }
 
-export function emitSchemaDefinitionFileSync(
-  schemaFilePath: string,
-  schema: GraphQLSchema,
-  options: PrintSchemaOptions = defaultPrintSchemaOptions,
-) {
-  const schemaFileContent = getSchemaFileContent(schema, options);
-  outputFileSync(schemaFilePath, schemaFileContent);
-}
+// export function emitSchemaDefinitionFileSync(
+//   schemaFilePath: string,
+//   schema: GraphQLSchema,
+//   options: PrintSchemaOptions = defaultPrintSchemaOptions,
+// ) {
+//   const schemaFileContent = getSchemaFileContent(schema, options);
+//   outputFileSync(schemaFilePath, schemaFileContent);
+// }
 
-export async function emitSchemaDefinitionFile(
-  schemaFilePath: string,
-  schema: GraphQLSchema,
-  options: PrintSchemaOptions = defaultPrintSchemaOptions,
-) {
+export async function emitSchemaDefinitionFile(opt: {
+  schemaFilePath?: string;
+  schema: GraphQLSchema;
+  options?: PrintSchemaOptions;
+}) {
+  const path = await import("node:path");
+  const { outputFile } = await import("../helpers/filesystem.js");
+  const {
+    schemaFilePath = path.resolve(process.cwd(), "schema.graphql"),
+    schema,
+    options = defaultPrintSchemaOptions,
+  } = opt;
   const schemaFileContent = getSchemaFileContent(schema, options);
   await outputFile(schemaFilePath, schemaFileContent);
 }
